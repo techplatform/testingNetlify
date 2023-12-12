@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calender</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+ <h1 id="calender">Welcome!</h1>
+  <div id="content">
+    <p>Recently Added</p>
+    <div id="messageContainer"></div>
+    <ul id="eventList"></ul>
+
+    <button id="createEvent">Create Event</button>
+  </div>
+
+  
+
+  <div id="commentContent">
+    <label for="commentInput">Add a Comment:</label>
+    <input type="text" id="commentInput" placeholder="Enter your comment">
+    <button onclick="addComment()">Submit</button>
+    <div id="commentList"></div>
+  </div>
+
+  <div>
+    <h1 id="currentMonth"></h1>
+  </div>
+
+  <div>
+      <table>
+          <thead>
+              <tr>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+              </tr>
+          </thead>
+          <tbody id="calendar-body"></tbody>
+        
+      </table>
+  </div>
+  
+  
+  
+  
+  <button id="darkModeToggle">Dark Mode</button>
+  <button id="logOut">Log Out</button>
+  <script src="app.js"></script>
+</body>
+</html>

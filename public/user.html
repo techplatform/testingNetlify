@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calender</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>User Registration</h1>
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="occupation">Occupation:</label>
+    <input type="text" id="occupation" name="occupation" required><br>
+
+    <label for="purpose">Purpose:</label>
+    <select id="purpose" name="purpose" required>
+      <option value="personal">Personal</option>
+      <option value="work">Work</option>
+    </select><br>
+
+    <button type="button" onclick="registerUser()">Register</button>
+  </form>
+
+  <button id="darkModeToggle">Dark Mode</button>
+  
+  <script src="app.js"></script>
+</body>
+</html>
